@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f8f9fb;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f1f4f8;
+  --border: #e2e7ef;
+  --text: #0f1c2e;
+  --text-muted: #6b7a99;
+  --accent: #1a4fa0;
+  --accent-light: #2563eb;
+  --accent-glow: rgba(26, 79, 160, 0.08);
+  --accent-dim: rgba(26, 79, 160, 0.25);
+  --danger: #c0392b;
+  --success: #16a34a;
+  --warning: #d97706;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
